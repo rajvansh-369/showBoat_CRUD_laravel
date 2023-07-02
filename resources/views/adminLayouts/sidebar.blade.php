@@ -4,23 +4,24 @@
             style="background-image: url({{ asset('storage/logo.jpg') }});"></a>
         <ul class="list-unstyled components mb-5">
 
-            <li class="{{ Route::currentRouteName() == 'adminIndex' ? 'active' : '' }}">
-                <a href="{{ route('adminIndex') }}">Home</a>
-            </li>
-            <li class="{{ Route::currentRouteName() == 'datable' ? 'active' : '' }}">
-                <a href="{{ route('datable') }}">Ajax Data Table</a>
-            </li>
-
-
-            <li class="{{ Route::currentRouteName() == 'adminState' ? 'active' : '' }}">
-                <a href="{{ route('adminState') }}">Add State</a>
-            </li>
-            <li class="{{ Route::currentRouteName() == 'adminDistrict' ? 'active' : '' }}">
-                <a href="{{ route('adminDistrict') }}">Add District</a>
+            <li class="{{Route::currentRouteName() == 'adminIndex' ?  'active':""}}">
+                <a href="{{route('adminIndex')}}">Home</a>
             </li>
             <li>
-                <a target="_snehal" href="http://snehal.info/">Portfolio (Snehal.info)</a>
+                <a href="{{route('datable')}}">Ajax Data Table</a>
             </li>
+
+
+            <li>
+                <a href="{{route('adminState')}}">Add State</a>
+            </li>
+            <li>
+                <a href="{{route('adminDistrict')}}">Add District</a>
+            </li>
+            <li>
+                <a href="http://snehal.info/">Portfolio (Snehal.info)</a>
+            </li>
+
         </ul>
 
     </div>
@@ -40,20 +41,16 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="{{ Route::currentRouteName() == 'adminIndex' ? 'active' : '' }}">
-                        <a href="{{ route('adminIndex') }}">Home</a>
+                    <li class="nav-item {{Route::currentRouteName() == 'adminIndex' ?  'active':""}}">
+                        <a class="nav-link" href="{{route('adminIndex')}}">Home</a>
                     </li>
-                    <li class="{{ Route::currentRouteName() == 'datable' ? 'active' : '' }}">
-                        <a href="{{ route('datable') }}">Ajax Data Table</a>
+                    <li class="nav-item {{Route::currentRouteName() == 'datable' ?  'active':""}}">
+                        <a class="nav-link"  href="{{route('datable')}}">Ajax Data Table</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://snehal.info/">Portfolio (Snehal.info)</a>
                     </li>
 
-
-                    <li class="{{ Route::currentRouteName() == 'adminState' ? 'active' : '' }}">
-                        <a href="{{ route('adminState') }}">Add State</a>
-                    </li>
-                    <li class="{{ Route::currentRouteName() == 'adminDistrict' ? 'active' : '' }}">
-                        <a href="{{ route('adminDistrict') }}">Add District</a>
-                    </li>
                 </ul>
             </div>
         </div>
