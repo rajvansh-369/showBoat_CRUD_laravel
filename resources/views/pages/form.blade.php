@@ -105,7 +105,7 @@
 
         function getDistrictsByStateId(stateId) {
             $.ajax({
-                url: '/get-districts/' + stateId,
+                url: 'https://snehal.info/project/showBoatTask/public/get-districts/' + stateId,
                 type: 'GET',
                 dataType: 'json',
                 success: function(response) {
