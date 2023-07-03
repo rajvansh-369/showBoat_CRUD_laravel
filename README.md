@@ -48,6 +48,6 @@ The application will be accessible at http://localhost:8000.
 ```
 Admin Details
 Email: admin@showboat.com
-Password: 123
+Password: 123456
 ```
 Please note that these are basic instructions to get the application up and running. You may need to adjust the steps based on your specific environment and requirements.
